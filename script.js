@@ -39,5 +39,5 @@ document.addEventListener("keydown",e=>{
  if(k==="arrowleft"||k==="a")move(-4,0);
  if(k==="arrowright"||k==="d")move(4,0);
 });
-document.querySelectorAll("[data-dir]").forEach(b=>b.onclick=()=>{const d=b.dataset.dir;({up:()=>move(0,-4),down:()=>move(0,4),left:()=>move(-4,0),right:()=>move(4,0)})[d]()});
+document.querySelectorAll("[data-dir]").forEach(b=>b.addEventListener("pointerdown",e=>{e.preventDefault();const d=b.dataset.dir;({up:()=>move(0,-4),down:()=>move(0,4),left:()=>move(-4,0),right:()=>move(4,0)})[d]() }));
 setStep(0);
