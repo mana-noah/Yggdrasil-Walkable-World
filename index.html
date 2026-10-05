@@ -14,9 +14,11 @@
     <div class="place-sign" id="placeSign">ノスタルジア駅</div>
     <div class="world">
       <div class="building theater-building" id="theaterVisual"></div>
+      <div class="direction-mark" id="directionMark">▶</div>
+      <div class="landmark" id="landmark"></div>
       <div class="road"></div>
       <div class="path-label" id="pathLabel">追憶劇場はこちら</div>
-      <div class="player" id="player" aria-label="プレイヤー"></div>
+      <div class="player" id="player" aria-label="プレイヤー"><span class="player-facing"></span></div>
     </div>
   </div>
 
@@ -25,6 +27,7 @@
     <div class="subtitle">WALKABLE WORLD — PROTOTYPE</div>
     <div id="status">ノスタルジア駅</div>
     <div id="message">駅を出て、追憶劇場へ向かう。</div>
+    <div class="orientation"><span>向き</span><strong id="facing">南</strong></div>
     <div class="controls">
       <button data-dir="up" aria-label="上へ">↑</button>
       <div><button data-dir="left" aria-label="左へ">←</button><button data-dir="down" aria-label="下へ">↓</button><button data-dir="right" aria-label="右へ">→</button></div>
